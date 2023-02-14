@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+  margin-bottom: 2.5em;
+  position: fixed;
+  width: 100%;
+  min-height: 1.5em;
+}
+nav ul {
+  padding: 0em 8em 0em 8em;
+}
+nav ul #Logo {
+  margin: 1em;
+  max-width: 7.5em;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  vertical-align: middle;
+  justify-content: flex-start;
+  margin-left: 3em;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+nav ul li a:hover {
+  color: rgba(74, 75, 76, 0.7);
+}
+nav ul li a:is(:link, :active, :visited).active {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 320px) {
+  ul {
+    margin-bottom: 15px;
+  }
+}
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav a:active {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 2.5em;
+}
+
+h5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.back {
+  font-family: "Montserrat", sans-serif;
+  font-style: 30px;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.description {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sizing {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a:is(:link, :active, :visited).active {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.heading-5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f6f6f6 !important;
+}
+
+main {
+  margin: 0em 12em 0em 12em;
+}
+main a {
+  text-decoration: none;
+  color: white;
+}
+main h5 {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+main .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  margin-top: 7em;
+}
+main .heading .main {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #EB5440;
+  border-radius: 7px;
+  color: #f6f6f6;
+  padding: 0.5em 2em;
+  background-image: url("./../images/ic_plus_white@3x.png");
+  background-repeat: no-repeat;
+  background-position: 0.8em 0.8em;
+  padding: 0.8em 1.5em 0.8em 3.5em;
+  background-size: 1.5em;
+}
+main .search {
+  display: flex;
+  justify-content: space-between;
+}
+main .search .search-type {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  width: 30em;
+  background-color: #e8e8e8;
+  background-image: url("./../images/ic_search@3x.png");
+  background-repeat: no-repeat;
+  background-position: 0.8em 0.8em;
+  padding: 1em 1.5em 1em 3.5em;
+  background-size: 1.5em;
+}
+main .search .buttons {
+  display: flex;
+  list-style: none;
+  margin-top: 0.2em;
+}
+main .search .buttons .red {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background: #EB5440;
+  padding: 0.6em;
+  width: 8em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+main .search .buttons .gray {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background: #c3c3c3;
+  padding: 0.6em;
+  width: 8em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .block {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+  padding: 1em;
+  height: 5em;
+  margin-top: 1em;
+}
+main .block #House {
+  max-width: 8em;
+  height: 8em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 1% 20%;
+     object-position: 1% 20%;
+  border-radius: 10px;
+  float: left;
+  margin-right: 1em;
+}
+
+#empty {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7em;
+  max-width: 20em;
+}
+
+.description {
+  color: rgba(74, 75, 76, 0.4);
+  margin-bottom: 0.4em;
+}
+
+#list-icon {
+  max-width: 1.3em;
+  opacity: 70%;
+}
+
+.sizing {
+  opacity: 100%;
+  display: flex;
+  margin-top: 1em;
+}
+.sizing .sizing-1 {
+  display: flex;
+  height: 15px;
+  align-items: center;
+  margin-right: 0.5em;
+  opacity: 70%;
+}
+.sizing .sizing-1 p {
+  opacity: 70%;
+}
+.sizing #list-icon {
+  margin-right: 0.5em;
+}
+
+.price {
+  margin-bottom: 0.5em;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#about-main, #add-main {
+  max-width: 65em;
+}
+
+@media only screen and (max-width: 740px) {
+  main .block {
+    height: 17em;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main .block {
+    height: 18em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main .block {
+    height: 20em;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search .search-type {
+    width: 26em;
+    border-radius: 6px;
+    margin-bottom: 1em;
+  }
+  .search .buttons .red {
+    width: 12.5em;
+  }
+  .search .buttons .gray {
+    width: 12.5em;
+  }
+  #add-main, #about-main {
+    width: 30em;
+  }
+  .info-footer {
+    width: 70em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2em;
+  }
+  nav #about {
+    display: none;
+  }
+  nav #houses {
+    font-size: 20px;
+  }
+  nav #Logo {
+    display: none;
+  }
+  main {
+    padding: 1em;
+    margin: -5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main h2 {
+    display: none;
+  }
+  main .main {
+    display: none;
+  }
+  main .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .search .search-type {
+    width: 23em;
+    border-radius: 6px;
+    margin-bottom: 1em;
+  }
+  main .search .buttons .red {
+    width: 11em;
+    padding: 0.7em;
+  }
+  main .search .buttons .gray {
+    width: 11em;
+    padding: 0.7em;
+  }
+  main .block {
+    height: 10em;
+    width: 20em;
+  }
+  main .block h5 {
+    font-size: 16px;
+  }
+  main #empty {
+    margin-top: 5em;
+    width: 15em;
+  }
+}
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav a:active {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 2.5em;
+}
+
+h5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.back {
+  font-family: "Montserrat", sans-serif;
+  font-style: 30px;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.description {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sizing {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a:is(:link, :active, :visited).active {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.heading-5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+  margin-bottom: 2.5em;
+  position: fixed;
+  width: 100%;
+  min-height: 1.5em;
+}
+nav ul {
+  padding: 0em 8em 0em 8em;
+}
+nav ul #Logo {
+  margin: 1em;
+  max-width: 7.5em;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  vertical-align: middle;
+  justify-content: flex-start;
+  margin-left: 3em;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+nav ul li a:hover {
+  color: rgba(74, 75, 76, 0.7);
+}
+nav ul li a:is(:link, :active, :visited).active {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 320px) {
+  ul {
+    margin-bottom: 15px;
+  }
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: url(./../images/img_background@3x.png) no-repeat center fixed;
+  background-size: cover;
+  background-position: 20% 10%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.icon-array {
+  width: 23px;
+  margin-right: 1em;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.small-h2 {
+  margin-bottom: 1em;
+}
+
+input, select {
+  border: none;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 0.5em 0em 0em 0em;
+}
+
+label {
+  color: rgba(74, 75, 76, 0.8);
+}
+
+#form {
+  margin-top: 6em;
+}
+
+.display-connected {
+  display: flex;
+}
+
+.right {
+  margin-left: 1em;
+}
+
+.image-upload > input {
+  display: none;
+}
+
+#square {
+  width: 170px;
+  margin-left: -2em;
+  opacity: 60%;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+}
+#form .input-group {
+  width: 50%;
+  width: 200px;
+  margin-bottom: 1em;
+}
+#form .input-group.full {
+  width: 100%;
+}
+#form .input-group .clear {
+  clear: both;
+}
+#form .input-group #description {
+  padding: 1.3em 0em 8em 1.5em;
+}
+#form .input-group label,
+#form .input-group input {
+  display: block;
+  width: 100%;
+}
+#form .input-group input {
+  padding: 1.3em 0em 1.3em 1.3em;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.4);
+}
+#form .input-group input:focus {
+  border: 1px solid #f6f6f6;
+}
+#form .input-group input.error {
+  border: 1px solid #EB5440;
+}
+#form .input-group #street,
+#form .input-group #post,
+#form .input-group #city,
+#form .input-group #price,
+#form .input-group #construction,
+#form .input-group #description {
+  width: 340px;
+}
+#form .input-group #number,
+#form .input-group #optional,
+#form .input-group #size,
+#form .input-group #garage,
+#form .input-group #bedrooms,
+#form .input-group #bathrooms {
+  width: 160px;
+}
+#form .input-group #optional,
+#form .input-group #garage,
+#form .input-group #bathrooms {
+  margin-left: -1.5em;
+}
+#form .input-group label#bathrooms {
+  margin-left: -2em;
+}
+#form .input-group input #garage {
+  color: rgba(0, 0, 0, 0.4);
+}
+#form .input-group select#garage {
+  color: rgba(0, 0, 0, 0.6);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("./../images/grey-arroy.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3px) center;
+  background-size: 30px;
+  height: 3.5em;
+}
+#form .errors {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 15px;
+  pointer-events: none;
+}
+#form .errors .error {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(230, 20, 20, 0.8);
+  color: #FFF;
+  font-size: 14px;
+  transform: translateY(300px);
+  pointer-events: all;
+  margin-bottom: 10px;
+  animation: slide-in 1s ease-out forwards;
+}
+@keyframes slide-in {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.submit {
+  background: #EB5440;
+  border: none;
+  border-radius: 8px;
+  padding: 1em;
+  width: 150px;
+  color: white;
+  margin-top: 1em;
+  margin-left: 13em;
+}
+.submit:hover {
+  background: rgba(196, 18, 18, 0.8);
+}
+
+@media only screen and (max-width: 420px) {
+  nav {
+    display: none;
+  }
+  main {
+    margin-left: 5em;
+  }
+  .back {
+    display: none;
+  }
+}/*# sourceMappingURL=listing.css.map *//

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Document</title>
+</head>
+
+<body id="houses">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><img src="images/img_logo_dtt@3x.png" alt="Logo" id="Logo"></a>
+            </li>
+    
+            <li>
+                <a href="listing.html">Houses</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="heading">
+            <h2>Houses</h2>
+            <button class="main">CREATE NEW</button>
+        </div>
+
+        <div class="search">
+            <form autocomplete="off">
+                <input type="search" name="search" placeholder="Search for a house" class="search-type">
+            </form>
+            <ul class="buttons">
+                <li><a href=""><button class="red">Price</a></button></li>
+                <li><a href=""><button class="gray">Size</a></button></li>
+            </ul>
+        </div>
+
+
+        <img src="images/img_empty_houses@3x.png" alt="Empty-House" id="empty"><br>
+        <p class="empty">No result found.<br>Please try another keyword.</p>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

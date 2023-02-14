@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@400;600&family=Paytone+One&family=Raleway:wght@300&display=swap");
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+  margin-bottom: 2.5em;
+  position: fixed;
+  width: 100%;
+  min-height: 1.5em;
+}
+nav ul {
+  padding: 0em 8em 0em 8em;
+}
+nav ul #Logo {
+  margin: 1em;
+  max-width: 7.5em;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  vertical-align: middle;
+  justify-content: flex-start;
+  margin-left: 3em;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+nav ul li a:hover {
+  color: rgba(74, 75, 76, 0.7);
+}
+nav ul li a:is(:link, :active, :visited).active {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 320px) {
+  ul {
+    margin-bottom: 15px;
+  }
+}
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav a:active {
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 2.5em;
+}
+
+h5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.detail {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.back {
+  font-family: "Montserrat", sans-serif;
+  font-style: 30px;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.description {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sizing {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a:is(:link, :active, :visited).active {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.heading-5 {
+  font-family: "Monstserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  padding: 1px;
+  margin: 8em 12em 0em 12em;
+}
+.container .row-arrow {
+  display: flex;
+  flex-direction: column;
+}
+.container .main {
+  display: flex;
+  flex-direction: row;
+}
+.container .main h5 {
+  margin: 1em 0em 0.5em 0em;
+}
+.container .main .overview {
+  margin: 1.5em;
+}
+.container .block {
+  background-color: white;
+  box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+  width: 550px;
+  height: 680px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+.container .block #House-detail {
+  max-width: 550px;
+}
+.container .block .back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  box-shadow: none;
+}
+.container .icon-array {
+  width: 23px;
+  margin-right: 1em;
+  margin-bottom: -0.3em;
+}
+.container .heading-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container #list-icon-btn {
+  max-width: 20px;
+  opacity: 90%;
+  margin-right: 1em;
+}
+.container .detail {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: -0.1em;
+}
+.container .location {
+  display: flex;
+  align-items: center;
+}
+.container .location .icon-location {
+  max-width: 15px;
+  margin-right: 0.5em;
+}
+.container .icons {
+  display: flex;
+  margin-top: -0.8em;
+  margin-bottom: -1em;
+}
+.container .icons .price {
+  display: flex;
+  align-items: center;
+}
+.container .icons .price .icon-price {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 0em;
+}
+.container .icons .sizing {
+  display: flex;
+  align-items: center;
+}
+.container .icons .sizing .icon-size {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.container .icons .build {
+  display: flex;
+  align-items: center;
+}
+.container .icons .build .icon-const {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.container .rooms {
+  display: flex;
+  align-items: center;
+}
+.container .rooms .bed {
+  display: flex;
+  align-items: center;
+}
+.container .rooms .bed .icon-bed {
+  max-width: 15px;
+  margin-right: 0.5em;
+}
+.container .rooms .shower {
+  display: flex;
+  align-items: center;
+}
+.container .rooms .shower .icon-shower {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.container .rooms .garage {
+  display: flex;
+  align-items: center;
+}
+.container .rooms .garage .icon-garage {
+  max-width: 15px;
+  margin: 0em 0.5em 0em 1em;
+}
+.container .aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6em;
+  margin-top: 2.5em;
+}
+.container .aside .small-block {
+  background-color: white;
+  box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+  width: 350px;
+  height: 120px;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin-bottom: 1em;
+}
+.container .aside .small-block .price {
+  margin-top: -0.001em;
+}
+.container .aside .small-block #small-house {
+  max-width: 6em;
+  height: 6em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 1% 20%;
+     object-position: 1% 20%;
+  border-radius: 10px;
+  float: left;
+  margin-right: 1em;
+}
+.container .aside .small-block .description {
+  color: rgba(74, 75, 76, 0.4);
+  margin-top: -0.8em;
+  margin-bottom: 1.2em;
+}
+.container .aside .small-block #list-icon {
+  max-width: 1.3em;
+  opacity: 70%;
+}
+.container .aside .small-block .sizing-aside {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.container .aside .small-block .sizing-aside .sizing-1 {
+  display: flex;
+  height: 15px;
+  align-items: center;
+  margin-right: 0.5em;
+  opacity: 70%;
+}
+.container .aside .small-block .sizing-aside .sizing-1 p {
+  opacity: 70%;
+}
+.container .aside .small-block .sizing-aside .sizing-1 #list-icon {
+  margin-right: 0.5em;
+  width: 1.2em;
+}
+
+@media only screen and (max-width: 420px) {
+  nav {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100em;
+    align-items: center;
+  }
+  .container .back {
+    display: none;
+  }
+  .container .main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -11em;
+    margin-left: 8em;
+  }
+  .container .main .block .overview {
+    width: 340px;
+  }
+  .container .main .block #House-detail {
+    width: 390px;
+  }
+  .container .aside {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 80em;
+    align-items: center;
+  }
+  .container .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .aside {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=details.css.map */

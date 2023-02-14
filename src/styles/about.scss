@@ -1,0 +1,305 @@
+@import "variables";
+@import "mixin";
+@import "nav";
+@import "fonts";
+    
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }    
+
+    #about {
+        background-color: $background;
+    }
+
+    
+    #about-h2 {
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+    }
+
+    #about-h2-design {
+        padding-bottom: 1.5em;
+    }
+
+    #about-main {
+        padding-bottom: 2em;
+    }
+
+    #add-main {
+        padding-bottom: 3.5em;
+    }
+
+    #dtt {
+        opacity: 70%;
+        color: #067Bc2;
+    }
+
+    .about-main {
+            margin-top: 7em;
+        }
+
+    footer {
+        display: flex;
+        align-items: center;
+
+        #about-logo {
+            max-width: 210px;
+            margin-right: 2.5em;
+        }
+    }
+    
+        body {
+            background-color: $background;
+        }
+    
+        main {
+            margin: 0em 12em 0em 12em;
+    
+            a {
+                text-decoration: none;
+                color: white
+            }
+    
+            h5 {
+                margin-top: 0.4em;
+                margin-bottom: 0.5em;
+            }
+    
+            .heading {
+                @include space-between;
+                margin-bottom: 1em;
+                margin-top: 7em;
+    
+                .main {
+                    @include button;
+                    background-color: $buttons;
+                    border-radius: 7px;
+                    color: #f6f6f6;
+                    padding: 0.5em 2em;
+                    background-image: url('./../images/ic_plus_white@3x.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.8em 0.8em;
+                    padding: 0.8em 1.5em 0.8em 3.5em;
+                    background-size: 1.5em;
+    
+                }
+            }
+    
+            .search {
+                @include space-between;
+    
+    
+                .search-type {
+                    border-radius: 3px;
+                    border: none;
+                    outline: none;
+                    padding: 0.8em;
+                    width: 30em;
+                    background-color: #e8e8e8;
+                    background-image: url('./../images/ic_search@3x.png');
+                    background-repeat: no-repeat;
+                    background-position: 0.8em 0.8em;
+                    padding: 1em 1.5em 1em 3.5em;
+                    background-size: 1.5em;
+                }
+    
+                .buttons {
+                    display: flex;
+                    list-style: none;
+                    margin-top: 0.2em;
+    
+                    .red {
+                        @include button;
+                        background: $buttons;
+                        padding: 0.6em;
+                        width: 8em;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+    
+                    .gray {
+                        @include button;
+                        background: #c3c3c3;
+                        padding: 0.6em;
+                        width: 8em;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+            }
+    
+            .block {
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
+                padding: 1em;
+                height: 10em;
+                margin-top: 1em;
+    
+    
+                #House {
+                    max-width: 8em;
+                    height: 8em;
+                    object-fit: cover;
+                    object-position: 1% 20%;
+                    border-radius: 10px;
+                    float: left;
+                    margin-right: 1em;
+                }
+            }
+        }
+    
+        #empty {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 7em;
+            max-width: 20em;
+    
+        }
+    
+        .description {
+            color: rgba($text-1, 0.4);
+            margin-bottom: 0.4em;
+    
+        }
+    
+        #list-icon {
+            max-width: 1.3em;
+            opacity: 70%;
+        }
+    
+        .sizing {
+            opacity: 100%; //index
+            display: flex;
+            margin-top: 1em;
+    
+            .sizing-1 {
+                display: flex;
+                height: 15px;
+                align-items: center;
+                margin-right: 0.5em;
+                opacity: 70%;
+    
+                p {
+                    opacity: 70%;
+                }
+            }
+    
+            #list-icon {
+                margin-right: 0.5em;
+            }
+        }
+    
+        .price {
+            margin-bottom: 0.5em;
+        }
+    
+        .empty {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        #about-main,
+        #add-main {
+            max-width: 65em;
+        }
+
+    //Responsive design//
+                @media only screen and (max-width: 420px) {
+                    //mobile
+        
+                    nav {
+                        background-color: transparent;
+                        box-shadow: none;
+                        
+
+                        #houses{
+                            display: none;
+                        }
+
+                        #about-link {
+                            font-size: 20px;
+                        }
+        
+                        #Logo {
+                            display: none;
+                        }
+                    }
+        
+                    main {
+                        padding: 1em;
+                        margin: -5em 1em;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+        
+        
+                        .main {
+                            display: none;
+                        }
+        
+                        .search {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+        
+                            .search-type {
+                                width: 23em;
+                                border-radius: 6px;
+                                margin-bottom: 1em;
+                            }
+        
+                            .buttons {
+        
+                                .red {
+                                    width: 11em;
+                                    padding: 0.7em;
+                                }
+        
+                                .gray {
+                                    width: 11em;
+                                    padding: 0.7em;
+                                }
+                            }
+                        }
+        
+        
+                        .block {
+                            height: 10em;
+                            width: 20em;
+        
+                            h5 {
+                                font-size: 16px;
+                            }
+                        }
+        
+        
+                        #empty {
+                            margin-top: 5em;
+                            width: 15em;
+                        }
+
+                        #about-main, #add-main {
+                        width: 300px;
+                    }
+        
+        
+                    }
+        
+                }
+
+                @media only screen and (max-width: 530px) {
+                    #about-main, #add-main {
+                        width: 200px;
+                    }
+                }
+
+            
+
+    //Responsive design//
