@@ -25,4 +25,9 @@ export default {
 
 <style lang="scss" scoped>
     @import "@/styles/_nav.scss";
+
+    nav .active-link {
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+    }
 </style>

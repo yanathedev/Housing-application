@@ -1,7 +1,7 @@
 <template>
 <main> 
     <div class="about-main">
-        <h2 id="about-h2">About DTT Real Estate</h2>
+        <h3 id="about-h2">About DTT Real Estate</h3>
         <p id="about-main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nostrum ab fugit ullam!
             Aut nihil sit perferendis assumenda ab inventore at, eaque doloremque,
             ad possimus aperiam, voluptates optio magni laudantium recusandae sequi? Odio libero fugit necessitatibus,
@@ -13,10 +13,10 @@
         <p id="add-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam ullam vitae quam,
             aspernatur deserunt sapiente incidunt tenetur eveniet?</p>
 
-        <h2 id="about-h2-design">Design and Development</h2>
+        <h3 id="about-h2-design">Design and Development</h3>
         <footer>
             <img src="images/img_logo_dtt@3x.png" alt="Logo" id="about-logo">
-            <div class="info-footer">
+            <div>
                 <p>By DTT</p>
                 <a href="www.d-tt.nl" id="dtt">
                     <p>www.d-tt.nl</p>
@@ -35,5 +35,4 @@ export default {
 
 <style lang="scss" scoped>
     @import "@/styles/about.scss";
-
 </style>

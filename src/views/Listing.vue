@@ -1,5 +1,5 @@
 <template>
-        <main>
+        <main id="listing-main">
             <form action="action_page.php" id="form">
                 <div class="container">
                     <p class="back"><router-link to="/detail"><img src="images/ic_back_grey@3x.png" alt="icon-array" class="icon-array"></router-link>Back to overview</p>
@@ -98,10 +98,8 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
-    data() {
+    data: () => {
         return {
             formData:{
                 streetName: "",
@@ -120,15 +118,10 @@ export default {
         }
     },
 
-    methods:{
-        addProperty(){
-            axios.post("https://api.intern.d-tt.nl/api/houses",this.formData)
-            .then(response=>{
-                console.log(response)
-            })
+    methods() {
+        //methods of components
+            }
         }
-    }
-}
 
 </script>
 

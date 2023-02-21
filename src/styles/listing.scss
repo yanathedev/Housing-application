@@ -7,10 +7,9 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    margin: 0;
 }
 
-body, main {
+#listing-main {
         background: url('~@/assets/img_background@3x.png') no-repeat center fixed;
         -webkit-background-size: contain;
         -moz-background-size: cover;
@@ -19,7 +18,7 @@ body, main {
         background-position: 20% 10%;
         width: 100%;
         height: 100%;
-
+        margin-top: -2em;
 }
 
 
@@ -29,7 +28,7 @@ body, main {
 }
 
 .container {
-    margin: 2em 2em 2em 0em;
+    margin: 4em 2em 2em 0em;
     display: flex;
     flex-direction: column;
 }
@@ -232,13 +231,18 @@ label {
 
 //Responsive design//
     @media only screen and (max-width: 420px) { //mobile version
-        nav {
-            display: none;
+
+
+        #listing-main {
+            margin-top: -85em;
+            margin-left: 0;
+            overflow-x: hidden;
+
         }
 
-        main {
+        #form {
             margin-left: 5em;
-            margin-top: -85em;
+            margin-right: 1em;
         }
 
         .back {
