@@ -12,7 +12,7 @@ import AppHeader from './views/AppHeader.vue'
 export default {
   name: 'app',
   components: { 
-    AppHeader
+    AppHeader,
   }
   
 }

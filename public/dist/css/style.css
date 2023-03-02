@@ -313,9 +313,7 @@ main .block #House {
   .search .buttons .gray {
     width: 12.5em;
   }
-  #add-main, #about-main {
-    width: 30em;
-  }
+
   .info-footer {
     width: 70em;
   }
