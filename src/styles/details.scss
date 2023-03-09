@@ -9,7 +9,7 @@
     -webkit-box-sizing: border-box;
 }
 
-.container {
+.container-details {
     display: flex;
     flex-direction: row;
     gap: 1px;
@@ -20,6 +20,7 @@
         display: flex;
         flex-direction: column;
     }
+
     //main block//
     .main {
         display: flex;
@@ -94,6 +95,7 @@
         @include align;
         margin-top: -1.5em;
         margin-bottom: -2em;
+
         .price {
             @include align;
 
@@ -125,37 +127,37 @@
         }
     }
 
-    
+
     .rooms {
+        @include align;
+
+        .bed {
             @include align;
-    
-            .bed {
-                @include align;
-    
-                .icon-bed {
-                    max-width: 15px;
-                    margin-right: 0.5em;
-                }
-            }
-    
-            .shower {
-                @include align;
-    
-                .icon-shower {
-                    max-width: 15px;
-                    margin: 0em 0.5em 0em 1em;
-                }
-            }
-    
-            .garage {
-                @include align;
-    
-                .icon-garage {
-                    max-width: 15px;
-                    margin: 0em 0.5em 0em 1em;
-                }
+
+            .icon-bed {
+                max-width: 15px;
+                margin-right: 0.5em;
             }
         }
+
+        .shower {
+            @include align;
+
+            .icon-shower {
+                max-width: 15px;
+                margin: 0em 0.5em 0em 1em;
+            }
+        }
+
+        .garage {
+            @include align;
+
+            .icon-garage {
+                max-width: 15px;
+                margin: 0em 0.5em 0em 1em;
+            }
+        }
+    }
 
     //main block//
 
@@ -171,72 +173,73 @@
         }
 
         .small-block {
-                background-color: white;
-                box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
-                width: 350px;
-                height: 120px;
-                border-radius: 5px;
-                padding: 0.8em;
-                margin-bottom: 1em;
+            background-color: white;
+            box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+            width: 350px;
+            height: 120px;
+            border-radius: 5px;
+            padding: 0.8em;
+            margin-bottom: 1em;
 
-        .price {
-            margin-top: -0.001em;
-        }
+            .price {
+                margin-top: -0.001em;
+            }
 
-    
-        
-                #small-house {
-                    max-width: 6em;
-                    height: 6em;
-                    object-fit: cover;
-                    object-position: 1% 20%;
-                    border-radius: 10px;
-                    float: left;
-                    margin-right: 1em;
+
+
+            #small-house {
+                max-width: 6em;
+                height: 6em;
+                object-fit: cover;
+                object-position: 1% 20%;
+                border-radius: 10px;
+                float: left;
+                margin-right: 1em;
+            }
+
+            .information {
+                .description {
+                    color: rgba($text-1, 0.4);
+                    margin-bottom: 1.2em;
+
                 }
-
-                .information {
-                    .description {
-                            color: rgba($text-1, 0.4);
-                            margin-bottom: 1.2em;
-                    
-                        }
-                }
+            }
 
 
-                #list-icon {
-                    max-width: 1.3em;
-                    opacity: 70%;
-                }
+            #list-icon {
+                max-width: 1.3em;
+                opacity: 70%;
+            }
 
-                .sizing-aside {
-                    @include align;
-                    color: rgba(0,0,0,0.5);
-        
+            .sizing-aside {
+                @include align;
+                color: rgba(0, 0, 0, 0.5);
+
                 .sizing-1 {
                     display: flex;
                     height: 15px;
                     align-items: center;
                     margin-right: 0.5em;
                     opacity: 70%;
-        
-                p {
-                    opacity: 70%;
+
+                    p {
+                        opacity: 70%;
+                    }
+
+                    #list-icon {
+                        margin-right: 0.5em;
+                        width: 1.2em;
+                    }
+
+
                 }
 
-                #list-icon {
-                margin-right: 0.5em;
-                width: 1.2em;
-                }
-
-                
             }
-        
         }
-    }   
     }
 }
-    //aside//
+
+//aside//
 
 
 @media only screen and (max-width: 420px) {
@@ -244,16 +247,17 @@
     nav {
         display: none;
     }
+
     .container {
         display: flex;
         flex-direction: column;
         height: 100em;
-        align-items: center; 
+        align-items: center;
 
-    
-    .back {
-        display: none;
-    }
+
+        .back {
+            display: none;
+        }
 
 
         .main {
@@ -273,7 +277,7 @@
                 }
             }
 
-            
+
 
         }
 
@@ -281,29 +285,29 @@
         .aside {
             display: flex;
             flex-direction: column;
-            
+
         }
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    .container {
-            display: flex;
-            flex-direction: column;
-            height: 80em;
-            align-items: center;
+// @media only screen and (max-width: 1300px) {
+//     .container {
+//             display: flex;
+//             flex-direction: column;
+//             height: 80em;
+//             align-items: center;
 
-        .main {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .aside {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
+//         .main {
+//             display: flex;
+//             flex-direction: column;
+//         }
+
+//         .aside {
+//             display: flex;
+//             flex-direction: column;
+//         }
+//     }
+// }
 
 
 //Responsive design//

@@ -13,6 +13,7 @@
 
 body {
     background-color: $background !important;
+    background-image: none;
 }
 
 
@@ -51,7 +52,7 @@ main {
 
     .search {
         @include space-between;
-        
+
 
         .search-type {
             border-radius: 3px;
@@ -92,34 +93,25 @@ main {
         }
     }
 
-    .block{
+    .block-home {
+        display: flex;
         background-color: white;
         border-radius: 5px;
         box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.02);
         padding: 1em;
-        height: 5em;
-        margin-top: 1em;
+        height: 10em;
+        margin-top: 2em;
 
 
-        #House{
+        #House {
             max-width: 8em;
             height: 8em;
             object-fit: cover;
             object-position: 1% 20%;
             border-radius: 10px;
-            float: left;
             margin-right: 1em;
         }
     }
-}
-
-#empty {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7em;
-    max-width: 20em;
-    
 }
 
 .description {
@@ -158,16 +150,6 @@ main {
     margin-bottom: 0.5em;
 }
 
-.empty {
-    display: flex;
-    justify-content:center;
-    text-align: center;
-}
-
-#about-main, #add-main {
-    max-width: 65em;
-}
-
 
 //Responsive design//
 
@@ -200,35 +182,42 @@ main {
     }
 }
 
-@media only screen and (max-width: 1050px) {  //responsive change
+@media only screen and (max-width: 1050px) {
+    //responsive change
 
-        .search {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .search-type {
-                width: 26em;
-                border-radius: 6px;
-                margin-bottom: 1em;
-            }
-    
-            .buttons {
-                .red {
-                    width: 12.5em;
-                }
-    
-                .gray {
-                    width: 12.5em;
-                }
-            }
+            width: 26em;
+            border-radius: 6px;
+            margin-bottom: 1em;
         }
-        
 
-        .info-footer {
-            width: 70em;
+        .buttons {
+            .red {
+                width: 12.5em;
+            }
+
+            .gray {
+                width: 12.5em;
+            }
         }
-        //about.html//
+    }
+
+    //about.html//
+    #add-main,
+    #about-main {
+        width: 30em;
+    }
+
+    .info-footer {
+        width: 70em;
+    }
+
+    //about.html//
 }
 
 @media only screen and (max-width: 420px) {
@@ -306,13 +295,8 @@ main {
             }
         }
 
-
-        #empty {
-            margin-top: 5em;
-            width: 15em;
-        }
-
     }
 
 }
+
 //Responsive Design//
