@@ -11,13 +11,7 @@
     padding: 0;
 }
 
-body {
-    background-color: $background !important;
-    background-image: none;
-}
-
-
-main {
+#listing-home {
     margin: 0em 12em 0em 12em;
 
     a {
@@ -35,7 +29,7 @@ main {
         margin-bottom: 1em;
         margin-top: 7em;
 
-        .main {
+        #red-btn-create {
             @include button;
             background-color: $buttons;
             border-radius: 7px;
@@ -48,6 +42,15 @@ main {
             background-size: 1.5em;
 
         }
+    }
+
+
+    .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: -1.5em;
+            margin-bottom: -2em;
     }
 
     .search {
@@ -101,11 +104,10 @@ main {
         padding: 1em;
         height: 10em;
         margin-top: 2em;
-
-
+        
         #House {
-            max-width: 8em;
-            height: 8em;
+            max-width: 2em;
+            height: 2em;
             object-fit: cover;
             object-position: 1% 20%;
             border-radius: 10px;
@@ -151,12 +153,11 @@ main {
 }
 
 
-//Responsive design//
 
 
 @media only screen and (max-width: 740px) {
 
-    main {
+    #listing-home {
         .block {
             height: 17em;
         }
@@ -165,7 +166,7 @@ main {
 
 @media only screen and (max-width: 650px) {
 
-    main {
+    #listing-home {
         .block {
             height: 18em;
         }
@@ -174,7 +175,7 @@ main {
 
 @media only screen and (max-width: 600px) {
 
-    main {
+    #listing-home {
         .block {
             height: 20em;
             width: 250px;
@@ -206,59 +207,45 @@ main {
             }
         }
     }
-
-    //about.html//
-    #add-main,
-    #about-main {
-        width: 30em;
-    }
-
-    .info-footer {
-        width: 70em;
-    }
-
-    //about.html//
 }
 
 @media only screen and (max-width: 420px) {
     //mobile
 
     nav {
-        background-color: transparent;
-        box-shadow: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: -2em;
-
-
-        #about {
+        a {
             display: none;
+        }
+
+        ul{
+            padding: 0em;
         }
 
         #houses {
-            font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                padding: 0;
+                margin-top: 2em;
+            }
+        
+        #about-link {
+                display: none;
+            }
         }
-
-        #Logo {
-            display: none;
-        }
-    }
-
-    main {
-        padding: 1em;
-        margin: -5em 1em;
+    
+    #listing-home {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: -5em;
 
-        h2 {
+        #red-btn-create {
             display: none;
         }
 
-        .main {
-            display: none;
-        }
+    }
 
         .search {
             display: flex;
@@ -283,12 +270,13 @@ main {
                     padding: 0.7em;
                 }
             }
+
         }
 
 
-        .block {
+        .block-home {
             height: 10em;
-            width: 20em;
+            width: 21em;
 
             h5 {
                 font-size: 16px;
@@ -297,6 +285,3 @@ main {
 
     }
 
-}
-
-//Responsive Design//

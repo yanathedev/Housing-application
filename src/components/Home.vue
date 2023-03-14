@@ -1,9 +1,9 @@
 <template>
     <!--Body-->
-    <main>
+    <main id-=listing-home>
         <div class="heading">
             <h2>Houses</h2>
-            <button class="main"><router-link to="/listing">CREATE NEW</router-link></button>
+            <button id="red-btn-create"><router-link to="/listing">CREATE NEW</router-link></button>
         </div>
 
         <div class="search">
@@ -19,33 +19,28 @@
             </ul>
         </div>
 
-        <div class="block-home">
-            <router-link to="/detail"><img src="images/img_placeholder_house@3x.png" alt="House-Image"
-                    id="House"></router-link>
-            <div class="heading-1">
-                <h5>Stokvisstraat 132</h5>
 
-                <div class="information">
-                    <p class="price">
-                        € 500.000
-                    </p>
-                    <p class="description">
-                        1011AA Amsterdam
-                    </p>
-                    <div class="sizing">
-                        <div class="sizing-1"><img src="images/icons/ic_bed@3x.png" alt="icon-bed" id="list-icon">
-                            <p>1</p>
-                        </div>
-                        <div class="sizing-1"><img src="images/icons/ic_bath@3x.png" alt="icon-bath" id="list-icon">
-                            <p>1</p>
-                        </div>
-                        <div class="sizing-1"><img src="images/icons/ic_size@3x.png" alt="index-size" id="list-icon">
-                            <p>120m2</p>
-                        </div>
-                    </div>
+        <div class="block-home">
+                <router-link to="/detail">
+                    <img src="images/img_placeholder_house@3x.png" alt="House-Image"
+                    id="House">
+                </router-link>
+
+                <div class="heading-1">
+                    <h5>Stokvisstraat 132</h5>
+                        <router-link to="/edit">
+                            <img src="images/ic_edit@3x.png" alt="icon-edit"
+                            id="list-icon-btn">
+                        </router-link>
+
+                        <a href="delete.html">
+                            <img src="images/ic_delete@3x.png" alt="icon-delete"
+                            id="list-icon-btn">
+                        </a>
                 </div>
-            </div>
-        </div>
+        </div> <!--block-home-->
+            
+            
 
         <div class="block-home">
             <router-link to="/detail"><img src="images/img_placeholder_house@3x.png" alt="House-Image"
